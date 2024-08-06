@@ -4,10 +4,77 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .block-heading {
+            text-align: center;
+            color: #3b99e0;
+            margin-bottom: 2rem;
+        }
+        .summary {
+            border-top: 2px solid #5ea4f3;
+            background-color: #f7fbff;
+            padding: 1.5rem;
+            border-bottom: 2px solid #5ea4f3;
+        }
+        .summary .btn {
+            background-color: #3b99e0;
+            color: white;
+            border: none;
+        }
+    </style>
+
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	    <div class="container">
+        <!-- Block Heading -->
+        <div class="block-heading">
+            <h1>Shopping Cart</h1>
+        </div>
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Product Block -->
+                <div class="product">
+                    <div class="row mb-3">
+                        <!-- Product Image -->
+                        <div class="col-12 col-md-6">
+                            <img src="https://via.placeholder.com/150" alt="Product Image 1" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="https://via.placeholder.com/150" alt="Product Image 2" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- Additional Images -->
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="https://via.placeholder.com/150" alt="Product Image 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat .product block as needed -->
+            </div>
+            <!-- Summary Block -->
+            <div class="col-lg-4">
+                <div class="summary">
+                    <h4>Total Price</h4>
+                    <p>$123.45</p>
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
